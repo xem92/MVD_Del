@@ -38,15 +38,15 @@ void AISystem::update(float dt) {
 			// Calculate the direction of the rotation
 			if (angle >= -1 && angle <= 1) {
 				angle = acos(angle);
-				aux_transform_a.rotateLocal(angle * 0.001, lm::vec3(0, 1, 0));
+				aux_transform_a.rotateLocal(angle * 0.01, lm::vec3(0, 1, 0));
 				angle_a = calculateAngle(aux_transform_a.front(), forward_dir_to_go);
-				aux_transform_b.rotateLocal(angle * -0.001, lm::vec3(0, 1, 0));
+				aux_transform_b.rotateLocal(angle * -0.01, lm::vec3(0, 1, 0));
 				angle_b = calculateAngle(aux_transform_b.front(), forward_dir_to_go);
 				if (angle_a < angle_b) {
-					transform.rotateLocal(angle * 0.001, lm::vec3(0, 1, 0));
+					transform.rotateLocal(angle * 0.01, lm::vec3(0, 1, 0));
 				}
 				else {
-					transform.rotateLocal(angle * -0.001, lm::vec3(0, 1, 0));
+					transform.rotateLocal(angle * -0.01, lm::vec3(0, 1, 0));
 				}
 			}
 
@@ -93,15 +93,15 @@ void AISystem::update(float dt) {
 				// Calculate the direction of the rotation
 				if (angle >= -1 && angle <= 1) {
 					angle = acos(angle);
-					aux_transform_a.rotateLocal(angle * 0.001, lm::vec3(0, 1, 0));
+					aux_transform_a.rotateLocal(angle * 0.01, lm::vec3(0, 1, 0));
 					angle_a = calculateAngle(aux_transform_a.front(), forward_dir_to_go);
-					aux_transform_b.rotateLocal(angle * -0.001, lm::vec3(0, 1, 0));
+					aux_transform_b.rotateLocal(angle * -0.01, lm::vec3(0, 1, 0));
 					angle_b = calculateAngle(aux_transform_b.front(), forward_dir_to_go);
 					if (angle_a < angle_b) {
-						transform.rotateLocal(angle * -0.001, lm::vec3(0, 1, 0));
+						transform.rotateLocal(angle * -0.01, lm::vec3(0, 1, 0));
 					}
 					else {
-						transform.rotateLocal(angle * 0.001, lm::vec3(0, 1, 0));
+						transform.rotateLocal(angle * 0.01, lm::vec3(0, 1, 0));
 					}
 				}
 
