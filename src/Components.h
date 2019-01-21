@@ -141,8 +141,8 @@ enum AIType {
 //AIComponent.
 // ai_type is the type of the AI
 // patrol_points all the target points were the ai moves
-// patrol_point position of the patrol_points vector were the ai is moving
-// speed is the speed of the ai moving in the world
+// patrol_point actual target point of the ai
+// speed translation speed of the ai
 // state is the actual state of the ai
 // rest_time time that the ai rest once arrive to its target
 // detection_collider_id the id of the collider the ai use to detect the player
