@@ -3,7 +3,7 @@
 
 ## AI System
 Simple AI system. It's a state machine with 3 states: Patrolling, Resting, Following.
-The AI move from one patrolling point to another and resting when it arrives to the target point. If the player collides with the selected collider, the AI, starts to folow the player.
+The AI move from one patrolling point to another and resting when it arrives to that point. If the player collides with a selected collider, the AI, starts to follow the player.
 
 ## AI Component
 New AI component created:
